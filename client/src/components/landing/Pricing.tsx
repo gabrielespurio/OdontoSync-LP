@@ -45,7 +45,7 @@ export default function Pricing() {
           {/* Professional */}
           <div className="bg-blue-50/50 rounded-3xl p-[2px] relative shadow-xl transform scale-105 z-10 bg-gradient-to-b from-primary to-secondary">
             <div className="bg-white h-full w-full rounded-[22px] p-8 relative overflow-hidden">
-                <div className="absolute top-0 left-1/2 -translate-x-1/2 bg-secondary text-white px-4 py-1 rounded-b-xl text-sm font-bold z-20">
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 bg-gradient-to-r from-primary to-secondary text-white px-4 py-1 rounded-b-xl text-sm font-bold z-20">
                   Mais Popular
                 </div>
                 <h3 className="text-xl font-semibold text-secondary mb-2 mt-4">Professional</h3>

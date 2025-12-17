@@ -71,7 +71,7 @@ export default function Pricing() {
                     </li>
                   ))}
                 </ul>
-                <Button className="w-full bg-secondary hover:bg-secondary/90 text-white rounded-xl py-6 font-bold text-lg shadow-lg shadow-blue-500/20">
+                <Button className="w-full bg-primary hover:bg-primary/90 text-white rounded-xl py-6 font-bold text-lg shadow-lg shadow-teal-500/20">
                   Começar Agora
                 </Button>
             </div>

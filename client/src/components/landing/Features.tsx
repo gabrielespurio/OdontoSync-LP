@@ -77,7 +77,7 @@ export default function Features() {
                     <img 
                       src={feature.image} 
                       alt={feature.title} 
-                      className="w-16 h-16 object-contain"
+                      className={`w-20 h-20 object-contain ${feature.title !== "Automação WhatsApp" ? "rounded-2xl" : ""}`}
                     />
                   ) : (
                     <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-teal-50 to-blue-50 flex items-center justify-center text-primary">

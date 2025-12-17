@@ -13,11 +13,13 @@ export default function Features() {
   const features = [
     {
       icon: FileUser,
+      image: "/features/prontuario.png",
       title: "Prontuário Digital",
       desc: "Anamnese, evolução clínica, odontograma interativo e prescrições digitais com validade jurídica.",
     },
     {
       icon: CalendarCheck,
+      image: "/features/agenda.png",
       title: "Agenda Inteligente",
       desc: "Controle de salas, encaixes rápidos e visualização por dia, semana ou profissional.",
     },
@@ -28,16 +30,19 @@ export default function Features() {
     },
     {
       icon: DollarSign,
+      image: "/features/financeiro.png",
       title: "Controle Financeiro",
       desc: "Contas a pagar/receber, repasse de comissões para dentistas e integração bancária.",
     },
     {
       icon: Archive,
+      image: "/features/estoque.png",
       title: "Estoque e Compras",
       desc: "Alertas de estoque baixo, controle de validade e gestão de fornecedores.",
     },
     {
       icon: ShieldCheck,
+      image: "/features/seguranca.png",
       title: "Segurança de Dados",
       desc: "Backups diários automáticos, criptografia de ponta a ponta e níveis de acesso.",
     },
@@ -63,13 +68,25 @@ export default function Features() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
               viewport={{ once: true }}
-              className="bg-white p-8 rounded-2xl border border-transparent hover:border-gray-200 hover:shadow-xl transition-all duration-300 group"
+              className="group relative rounded-2xl p-[1px] transition-all duration-300 bg-gray-100 hover:bg-gradient-to-br hover:from-primary hover:to-secondary hover:shadow-[0_0_20px_rgba(0,139,139,0.3)]"
             >
-              <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-teal-50 to-blue-50 flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
-                <feature.icon size={28} />
+              <div className="bg-white h-full rounded-[15px] p-8 flex flex-col items-start text-left">
+                <div className="mb-6 group-hover:scale-105 transition-transform duration-300">
+                  {feature.image ? (
+                    <img 
+                      src={feature.image} 
+                      alt={feature.title} 
+                      className="w-16 h-16 object-contain"
+                    />
+                  ) : (
+                    <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-teal-50 to-blue-50 flex items-center justify-center text-primary">
+                      <feature.icon size={32} />
+                    </div>
+                  )}
+                </div>
+                <h3 className="text-xl font-bold mb-3">{feature.title}</h3>
+                <p className="text-gray-500 leading-relaxed text-sm">{feature.desc}</p>
               </div>
-              <h3 className="text-xl font-bold mb-3">{feature.title}</h3>
-              <p className="text-gray-500 leading-relaxed">{feature.desc}</p>
             </motion.div>
           ))}
 
@@ -78,17 +95,19 @@ export default function Features() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.6 }}
             viewport={{ once: true }}
-            className="md:col-span-2 lg:col-start-2 lg:col-span-2 bg-gradient-to-r from-teal-50 to-blue-50 p-8 rounded-2xl flex flex-col md:flex-row items-center gap-8 border border-blue-100"
+            className="md:col-span-2 lg:col-start-2 lg:col-span-2 relative rounded-2xl p-[1px] transition-all duration-300 bg-gray-100 hover:bg-gradient-to-br hover:from-primary hover:to-secondary hover:shadow-[0_0_20px_rgba(0,139,139,0.3)] group"
           >
-            <div className="w-16 h-16 rounded-2xl bg-white flex items-center justify-center text-primary shadow-sm flex-shrink-0">
-              <PieChart size={32} />
-            </div>
-            <div>
-              <h3 className="text-xl font-bold mb-2">Relatórios Gerenciais</h3>
-              <p className="text-gray-600">
-                Dashboards visuais com indicadores de desempenho (KPIs), taxa de
-                conversão de orçamentos e produtividade da equipe.
-              </p>
+            <div className="bg-gradient-to-r from-teal-50 to-blue-50 h-full rounded-[15px] p-8 flex flex-col md:flex-row items-center gap-8">
+              <div className="w-20 h-20 rounded-2xl bg-white flex items-center justify-center text-primary shadow-sm flex-shrink-0 group-hover:scale-105 transition-transform duration-300">
+                <PieChart size={40} />
+              </div>
+              <div>
+                <h3 className="text-xl font-bold mb-2">Relatórios Gerenciais</h3>
+                <p className="text-gray-600">
+                  Dashboards visuais com indicadores de desempenho (KPIs), taxa de
+                  conversão de orçamentos e produtividade da equipe.
+                </p>
+              </div>
             </div>
           </motion.div>
         </div>

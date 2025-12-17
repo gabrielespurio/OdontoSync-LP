@@ -50,7 +50,7 @@ export default function Features() {
   ];
 
   return (
-    <section id="features" className="py-24 bg-white">
+    <section id="features" className="py-24 bg-gradient-to-b from-accent/30 to-white">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-4xl font-bold mb-4">

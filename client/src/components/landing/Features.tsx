@@ -25,6 +25,7 @@ export default function Features() {
     },
     {
       icon: MessageCircle,
+      image: "/features/whatsapp.png",
       title: "Automação WhatsApp",
       desc: "Mensagens de confirmação, aniversários e retorno preventivo sem intervenção manual.",
     },

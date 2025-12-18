@@ -34,10 +34,8 @@ export default function Navbar() {
       )}
     >
       <div className="container mx-auto px-4 flex items-center justify-between">
-        <Link href="/">
-          <a className="flex items-center gap-2 text-2xl font-bold text-primary cursor-pointer">
-            <span className="text-secondary text-3xl">🦷</span> OdontoSync
-          </a>
+        <Link href="/" className="flex items-center gap-2 text-2xl font-bold text-primary cursor-pointer">
+          <span className="text-secondary text-3xl">🦷</span> OdontoSync
         </Link>
 
         {/* Desktop Nav */}

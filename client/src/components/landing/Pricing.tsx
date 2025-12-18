@@ -58,7 +58,8 @@ export default function Pricing() {
                 </p>
                 <ul className="space-y-4 mb-8">
                   {[
-                    "3 Usuários",
+                    "1 Perfil Secretária",
+                    "3 Perfis Dentista",
                     "Confirmação WhatsApp",
                     "Controle Financeiro Completo",
                     "Emissão de Boletos",

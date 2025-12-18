@@ -93,6 +93,7 @@ export default function Pricing() {
                 "Multi-unidades",
                 "Relatórios Avançados (BI)",
                 "Gerente de Conta Dedicado",
+                "Assistente Virtual",
               ].map((item, i) => (
                 <li key={i} className="flex items-center gap-3 text-gray-700">
                   <Check className="text-green-500 w-5 h-5 flex-shrink-0" />

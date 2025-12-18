@@ -19,10 +19,6 @@ export default function FAQ() {
       q: "Como funciona a migração de dados?",
       a: "Nossa equipe auxilia na importação dos dados do seu sistema antigo ou planilhas. Temos um time dedicado para garantir que você comece com tudo organizado.",
     },
-    {
-      q: "O sistema emite Nota Fiscal?",
-      a: "Sim, temos integração para emissão de NFS-e (Nota Fiscal de Serviços Eletrônica) em diversas prefeituras. Consulte nossa equipe sobre a disponibilidade na sua cidade.",
-    },
   ];
 
   return (
